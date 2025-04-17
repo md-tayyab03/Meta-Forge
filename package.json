@@ -2,6 +2,10 @@
   "name": "metaforge",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
   "dependencies": {
     "@craco/craco": "^7.1.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -20,7 +24,8 @@
     "test": "craco test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": [
