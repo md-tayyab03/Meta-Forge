@@ -1,65 +1,129 @@
-# SEO Audit Tool
+# MetaForge - AI-SEO Optimization Tool
 
-## Overview
-The SEO Audit Tool is designed to analyze HTML content and evaluate essential SEO factors, such as keyword optimization in titles and descriptions. This project is currently in development.
+MetaForge is a professional SEO optimization tool designed to help web developers and content creators optimize their HTML code for better search engine visibility. The tool provides real-time analysis and optimization suggestions for your web content.
 
-## Installation & Setup
-### Prerequisites
-Ensure you have the following installed:
-- Node.js
-- npm (Node Package Manager)
+## Features
 
-### Steps to Run the Project
-#### In the project directory, you can run:
+- **Keyword Analysis**: Check focus keyword placement and density
+- **HTML Optimization**: Get suggestions for improving your HTML structure
+- **SEO Templates**: Pre-built SEO-friendly templates for different industries
+  - Digital Marketing
+  - Healthcare
+  - Artificial Intelligence
+- **Real-time Analysis**: Instant feedback on your HTML code
+- **Code Optimization**: Automated suggestions for improving SEO
+- **Mobile-Friendly**: Responsive design works on all devices
+- **PWA Support**: Installable as a Progressive Web App
 
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/metaforge.git
+cd metaforge
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Create a `.env` file in the root directory and add your Gemini API key:
+```
+REACT_APP_GEMINI_API_KEY=your_api_key_here
+```
+
+4. Start the development server:
 ```bash
 npm start
 ```
-Runs the app in development mode at http://localhost:3000.
 
-```bash
-npm test
+## Usage
+
+1. Enter your focus keyword
+2. Paste your HTML code or use one of the provided templates
+3. Click "Check Keyword" to analyze your code
+4. Review the optimization suggestions
+5. Use the "Optimize My Code" button to get improved HTML
+6. Copy the optimized code to your project
+
+## SEO Templates
+
+MetaForge includes three industry-specific templates:
+
+1. **Digital Marketing Template**
+   - Optimized for marketing content
+   - Includes schema markup
+   - Case study sections
+   - Service cards
+
+2. **Healthcare Template**
+   - Medical-specific schema
+   - Doctor profiles
+   - Service descriptions
+   - Contact information
+
+3. **AI Solutions Template**
+   - Clean, semantic structure
+   - Service descriptions
+   - About section
+   - Contact form
+
+## Technical Details
+
+- Built with React.js
+- Uses Gemini API for AI-powered optimization
+- Implements modern PWA features
+- Follows SEO best practices
+- Responsive design using CSS Grid and Flexbox
+- Uses Alegreya Sans SC font for typography
+
+## Project Structure
+
 ```
-Launches the test runner in interactive watch mode.
-
-```bash
-npm run build
+metaforge/
+├── public/
+│   ├── index.html
+│   ├── manifest.json
+│   ├── robots.txt
+│   └── icons/
+│       ├── favicon-16x16.png
+│       ├── favicon-32x32.png
+│       ├── android-chrome-192x192.png
+│       ├── android-chrome-512x512.png
+│       └── apple-touch-icon.png
+├── src/
+│   ├── components/
+│   │   ├── KeywordInput.js
+│   │   ├── HtmlCodeInput.js
+│   │   ├── ResultDisplay.js
+│   │   ├── OptimizationSection.js
+│   │   ├── SampleCodeDialog.js
+│   │   └── CodeSnippets.js
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── utils.js
+└── package.json
 ```
-Builds the app for production in the `build` folder.
 
-```bash
-npm run eject
-```
-**Note:** This is irreversible. It copies configuration files, giving full control over them.
+## Contributing
 
-## Features (In Progress)
-### 1. Website Analysis
-- **On-Page SEO Analysis**: Checks meta tags, headers, keyword usage, and content structure.
-- **Technical SEO Audit**: Evaluates site speed, mobile-friendliness, structured data, and broken links.
-- **Core Web Vitals Analysis**: Monitors LCP (Largest Contentful Paint), FID (First Input Delay), and CLS (Cumulative Layout Shift).
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-### 2. AI-Powered Suggestions
-- **Content Optimization**: AI recommends better keyword usage, content readability improvements, and topic relevance.
-- **Competitor Analysis**: AI compares your website with top-ranking competitors and suggests improvements.
-- **Automated Fix Suggestions**: Provides actionable fixes for SEO issues, such as missing alt tags, duplicate content, and page speed improvements.
+## License
 
-### 3. Keyword & Content Optimization
-- **AI-Generated Content Suggestions**: Suggests new blog topics and keyword variations.
-- **Keyword Difficulty & Opportunity Analysis**: Identifies easy-to-rank keywords.
-- **Search Intent Analysis**: Determines if the content aligns with user search intent.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-### 4. AI-Powered Reporting & Insights
-- **SEO Score & Trend Analysis**: Provides an overall SEO score and trend tracking.
-- **Automated Reports**: Generates PDF or dashboard-based reports with actionable insights.
-- **Custom Alerts**: Notifies users about significant SEO changes.
+## Acknowledgments
 
-## Report Generation
-### PDF Reports
-- **Best for Sharing & Presenting**
-  - ✅ Professional and easy to share
-  - ✅ Supports images, charts, and structured formatting
-  - ✅ Secure (can be password-protected)
-  - ✅ Can be downloaded and sent via email
+- React.js team for the amazing framework
+- Google for the Gemini API
+- All contributors who have helped shape this project
 
 ## Roadmap
 - Implement AI-powered content optimization
@@ -71,5 +135,5 @@ npm run eject
 This project is still in development. Contributions and suggestions are welcome!
 
 ## Contact
-For questions or collaborations, reach out via E-mail : mohammedtayyab242@gmail.com.
+For questions or collaborations, reach out via E-mail : **mohammedtayyab242@gmail.com**.
 

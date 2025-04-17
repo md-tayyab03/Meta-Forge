@@ -1,11 +1,12 @@
 {
-  "name": "htmloptimization",
+  "name": "metaforge",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "dotenv": "^16.5.0",
     "gh-pages": "^3.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -38,5 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://Mohammed-790.github.io/Search-Engine-Optimization"
+  "homepage": "https://md-tayyab03.github.io/MetaForge"
 }

@@ -1,113 +1,492 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* Import Alegreya Sans SC Font */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400;500;700&display=swap');
 
-/* General Body Styling */
+/* Base Styles */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alegreya Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background: linear-gradient(135deg, #DCEDFF, #94B0DA);
+  background: linear-gradient(135deg, #E8EFF7, #C8D6E8);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow-y: scroll;
 }
 
-/* Centered Glassmorphic Form */
+/* For Chrome, Safari, and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* If you need to target html element too */
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Container */
 .container {
+  position: relative;
   width: 90%;
-  max-width: 600px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
-  padding: 30px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
   animation: fadeIn 0.8s ease-in-out;
+  margin: 20px auto;
+  z-index: 1;
 }
 
-/* Heading */
+/* Headings */
 h1 {
+  margin-bottom: 15px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+h1, h2 {
   font-size: 24px;
   font-weight: 600;
-  color: #343F3E;
+  color: #0F3460;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
 
-/* Labels */
-label {
-  font-size: 16px;
+h3 {
+  font-size: 18px;
   font-weight: 500;
-  color: #343F3E;
-  display: block;
-  margin-bottom: 8px;
+  color: #0F3460;
+  margin-top: 16px;
+  margin-bottom: 12px;
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
 
-/* Inputs & Textarea */
-input,
-textarea {
+/* Inputs and Labels */
+.input-group {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0F3460;
+  display: block;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+input, textarea {
   width: 100%;
-  padding: 12px;
-  font-size: 16px;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  font-size: 14px;
   border: none;
   border-radius: 6px;
-  margin-bottom: 16px;
-  background: rgba(255, 255, 255, 0.2);
-  color: #343F3E;
+  background: #F2F6FC;
+  color: #333;
   transition: all 0.3s ease;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-input::placeholder,
-textarea::placeholder {
-  color: rgba(52, 63, 62, 0.6);
+input {
+  height: 36px;
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
 
-input:focus,
-textarea:focus {
+input::placeholder, textarea::placeholder {
+  color: #A5B1C2;
+  opacity: 0.8;
+}
+
+input:focus, textarea:focus {
   outline: none;
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
-  transform: scale(1.02);
+  background: #FFFFFF;
+  box-shadow: 0px 0px 0px 2px rgba(15, 52, 96, 0.2);
 }
 
-/* Button Styling */
+/* Scrollbar for textarea */
+textarea {
+  font-family: monospace;
+  resize: none;
+  height: 150px;
+  overflow-y: auto;
+  line-height: 1.4;
+}
+
+/* Optimized code textarea */
+.optimized-code {
+  height: 200px;
+  font-family: monospace;
+  font-size: 12px;
+  background: #F2F6FC;
+  border: 1px solid #E1E8F0;
+  margin-bottom: 16px;
+}
+
+/* WebKit Scrollbar */
+textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #F2F6FC;
+  border-radius: 6px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: #0F3460;
+  border-radius: 6px;
+  border: 2px solid #F2F6FC;
+  background-clip: padding-box;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background: #16478A;
+  border: 2px solid #F2F6FC;
+  background-clip: padding-box;
+}
+
+/* Firefox Scrollbar */
+textarea {
+  scrollbar-width: thin;
+  scrollbar-color: #0F3460 #F2F6FC;
+}
+
+/* Button */
 button {
   width: 100%;
   padding: 12px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #94B0DA, #8F91A2);
+  background: linear-gradient(90deg, #0F3460, #16478A);
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
+  margin-bottom: 16px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  letter-spacing: 1px;
 }
 
 button:hover {
-  background: linear-gradient(90deg, #8F91A2, #94B0DA);
-  transform: scale(1.05);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, #16478A, #0F3460);
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 12px rgba(15, 52, 96, 0.3);
 }
 
-/* Search Box Enhancement */
-.search-box {
+button:active {
+  transform: translateY(0);
+  box-shadow: 0px 2px 6px rgba(15, 52, 96, 0.3);
+}
+
+/* Optimization button styles */
+.optimization-section {
+  margin-top: 20px;
+}
+
+.optimizing-button {
+  background: linear-gradient(90deg, #4A6FA5, #8DAAD0);
+  cursor: wait;
+}
+
+.optimizing-button:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Optimized code container */
+.optimized-code-container {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 20px;
+  border-left: 4px solid #0F3460;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Result container */
+.result-container {
+  margin-top: 20px;
+  text-align: left;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 16px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #0F3460;
+}
+
+/* Clean optimization summary styling */
+.optimization-summary {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.optimization-summary h3 {
+  color: #0a3871;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+.summary-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.summary-item {
+  display: flex;
+  align-items: normal;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.bullet-point {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.category {
+  font-weight: bold;
+  min-width: 170px; /* Adjust based on your longest category name */
+  display: inline-block;
+}
+
+.colon {
+  margin: 0 8px;
+}
+
+.description {
+  flex: 1;
+}
+
+/* Hide the result container when it's empty */
+.result-container:empty {
+  display: none;
+}
+
+/* Result items */
+.result-container p {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 1.4;
+  padding-left: 28px;
   position: relative;
+  color: #333;
 }
 
-.search-box input {
-  padding-right: 40px;
-}
-
-.search-box::after {
-  content: "🔍";
+.result-icon {
   position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
+  left: 0;
+  top: 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+/* Result colors */
+.success-item {
+  color: #16A34A;
+}
+
+.success-item .result-icon {
+  color: #16A34A;
+}
+
+.warning-item {
+  color: #F59E0B;
+}
+
+.warning-item .result-icon {
+  color: #F59E0B;
+}
+
+.error-item {
+  color: #EF4444;
+}
+
+.error-item .result-icon {
+  color: #EF4444;
+}
+
+.info-item {
+  color: #0F3460;
+  font-weight: 500;
+}
+
+/* Custom scrollbar for results */
+.result-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.result-container::-webkit-scrollbar-track {
+  background: #F2F6FC;
+  border-radius: 6px;
+}
+
+.result-container::-webkit-scrollbar-thumb {
+  background: #0F3460;
+  border-radius: 6px;
+  border: 2px solid #F2F6FC;
+  background-clip: padding-box;
+}
+
+.result-container::-webkit-scrollbar-thumb:hover {
+  background: #16478A;
+  border: 2px solid #F2F6FC;
+  background-clip: padding-box;
+}
+
+/* Firefox scrollbar for results */
+.result-container {
+  scrollbar-width: thin;
+  scrollbar-color: #0F3460 #F2F6FC;
+}
+
+/* Sample Code Button - Small and fixed position */
+.sample-code-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: auto;
+  font-size: 12px;
+  padding: 8px 12px;
+  margin-bottom: 0;
+  background: linear-gradient(90deg, #16A34A, #168F4A);
+  z-index: 2;
+  box-shadow: 0px 3px 10px rgba(22, 163, 74, 0.3);
+  transform: none;
+  transition: all 0.3s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+.sample-code-button:hover {
+  background: linear-gradient(90deg, #168F4A, #16A34A);
+  transform: translateY(-2px);
+}
+
+/* Sample Code Dialog */
+.sample-code-dialog-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.sample-code-dialog {
+  width: 90%;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: linear-gradient(90deg, #0F3460, #16478A);
+  color: white;
+}
+
+.dialog-header h3 {
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.close-dialog-button {
+  background: none;
+  border: none;
+  color: white;
   font-size: 18px;
-  color: rgba(52, 63, 62, 0.6);
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+  margin: 0;
+}
+
+.close-dialog-button:hover {
+  transform: rotate(90deg);
+  background: none;
+  box-shadow: none;
+}
+
+.sample-code-table {
+  padding: 16px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #E1E8F0;
+}
+
+th {
+  font-weight: 600;
+  color: #0F3460;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+tr:hover {
+  background-color: #F2F6FC;
+}
+
+.copy-sample-button {
+  width: auto;
+  padding: 6px 12px;
+  font-size: 12px;
+  background: linear-gradient(90deg, #0F3460, #16478A);
+  margin: 0;
 }
 
 /* Fade-in animation */
@@ -122,18 +501,66 @@ button:hover {
   }
 }
 
+/* Loading spinner for optimization */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {
     padding: 20px;
     width: 95%;
   }
-
+  
   h1 {
     font-size: 20px;
   }
-
+  
   button {
     font-size: 14px;
   }
+  
+  
+  .sample-code-dialog {
+    width: 95%;
+  }
+}
+
+/* Code-related elements */
+.code-input,
+.optimized-code,
+textarea {
+  font-family: monospace !important;
+}
+
+/* Dialog styles */
+.sample-code-dialog h3,
+.sample-code-dialog button,
+.sample-code-dialog th,
+.sample-code-dialog td {
+  font-family: 'Alegreya Sans SC', sans-serif !important;
+}
+
+/* Debug styles */
+.container h1:first-of-type {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0F3460;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.container h1:last-of-type {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #16478A;
+  margin-bottom: 2rem;
+}
+
+/* Add font-family to all text elements */
+body, h1, h2, h3, h4, h5, h6, p, a, button, input, label, th, td {
+  font-family: 'Alegreya Sans SC', sans-serif;
 }

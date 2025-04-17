@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# MetaForge SEO Tool - robots.txt
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap
+Sitemap: https://metaforge.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10 
