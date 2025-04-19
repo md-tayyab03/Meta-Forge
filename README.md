@@ -47,27 +47,6 @@ npm start
 5. Use the "Optimize My Code" button to get improved HTML
 6. Copy the optimized code to your project
 
-## SEO Templates
-
-MetaForge includes three industry-specific templates:
-
-1. **Digital Marketing Template**
-   - Optimized for marketing content
-   - Includes schema markup
-   - Case study sections
-   - Service cards
-
-2. **Healthcare Template**
-   - Medical-specific schema
-   - Doctor profiles
-   - Service descriptions
-   - Contact information
-
-3. **AI Solutions Template**
-   - Clean, semantic structure
-   - Service descriptions
-   - About section
-   - Contact form
 
 ## Technical Details
 
@@ -118,18 +97,6 @@ metaforge/
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- React.js team for the amazing framework
-- Google for the Gemini API
-- All contributors who have helped shape this project
-
-## Roadmap
-- Implement AI-powered content optimization
-- Add competitor analysis and keyword difficulty scoring
-- Enhance reporting features with more in-depth insights
-- Improve UI/UX for a seamless user experience
 
 ## Contributions
 This project is still in development. Contributions and suggestions are welcome!
