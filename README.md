@@ -47,15 +47,12 @@ npm start
 5. Use the "Optimize My Code" button to get improved HTML
 6. Copy the optimized code to your project
 
+## Tech Stack
 
-## Technical Details
-
-- Built with React.js
-- Uses Gemini API for AI-powered optimization
-- Implements modern PWA features
-- Follows SEO best practices
-- Responsive design using CSS Grid and Flexbox
-- Uses Alegreya Sans SC font for typography
+- **React.js** (v18.2.0) - Frontend framework
+- **Node.js** (≥16.0.0) - JavaScript runtime
+- **NPM** (≥7.0.0) - Package manager
+- **Gemini AI** - AI-powered optimization engine
 
 ## Project Structure
 
