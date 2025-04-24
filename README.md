@@ -1,17 +1,17 @@
-# MetaForge - AI-SEO Optimization Tool
+# MetaForge - AI-Powered SEO Optimization Tool
 
-MetaForge is a professional SEO optimization tool designed to help web developers and content creators optimize their HTML code for better search engine visibility. The tool provides real-time analysis and optimization suggestions for your web content.
+MetaForge is a professional SEO optimization tool that leverages artificial intelligence to help web developers and content creators optimize their HTML code for better search engine visibility. Using Google's Gemini AI, the tool provides intelligent analysis and optimization suggestions for your web content.
 
-## Features
+## AI Features
 
-- **Keyword Analysis**: Check focus keyword placement and density
-- **HTML Optimization**: Get suggestions for improving your HTML structure
-- **SEO Templates**: Pre-built SEO-friendly templates for different industries
+- **Intelligent Keyword Analysis**: AI-powered analysis of keyword placement and density
+- **Smart HTML Optimization**: AI-driven suggestions for improving HTML structure
+- **Automated SEO Templates**: AI-generated SEO-friendly templates for different industries:
   - Digital Marketing
   - Healthcare
   - Artificial Intelligence
-- **Real-time Analysis**: Instant feedback on your HTML code
-- **Code Optimization**: Automated suggestions for improving SEO
+- **Real-time AI Analysis**: Instant intelligent feedback on your HTML code
+- **Smart Code Optimization**: AI-powered suggestions for improving SEO
 - **Mobile-Friendly**: Responsive design works on all devices
 - **PWA Support**: Installable as a Progressive Web App
 
@@ -41,10 +41,10 @@ npm start
 ## Usage
 
 1. Enter your focus keyword
-2. Paste your HTML code or use one of the provided templates
-3. Click "Check Keyword" to analyze your code
-4. Review the optimization suggestions
-5. Use the "Optimize My Code" button to get improved HTML
+2. Paste your HTML code or use one of the AI-generated templates
+3. Click "Check Keyword" to trigger AI analysis
+4. Review the AI-powered optimization suggestions
+5. Use the "Optimize My Code" button to get AI-enhanced HTML
 6. Copy the optimized code to your project
 
 ## Tech Stack
@@ -52,7 +52,7 @@ npm start
 - **React.js** (v18.2.0) - Frontend framework
 - **Node.js** (≥16.0.0) - JavaScript runtime
 - **NPM** (≥7.0.0) - Package manager
-- **Gemini AI** - AI-powered optimization engine
+- **Google Gemini AI** - Advanced AI model for intelligent SEO optimization
 
 ## Project Structure
 
@@ -70,15 +70,15 @@ metaforge/
 │       └── apple-touch-icon.png
 ├── src/
 │   ├── components/
-│   │   ├── KeywordInput.js
-│   │   ├── HtmlCodeInput.js
-│   │   ├── ResultDisplay.js
-│   │   ├── OptimizationSection.js
-│   │   ├── SampleCodeDialog.js
-│   │   └── CodeSnippets.js
-│   ├── App.js
+│   │   ├── KeywordInput.jsx
+│   │   ├── HtmlCodeInput.jsx
+│   │   ├── ResultDisplay.jsx
+│   │   ├── OptimizationSection.jsx
+│   │   ├── SampleCodeDialog.jsx
+│   │   └── CodeSnippets.jsx
+│   ├── App.jsx
 │   ├── App.css
-│   ├── index.js
+│   ├── index.jsx
 │   └── utils.js
 └── package.json
 ```
