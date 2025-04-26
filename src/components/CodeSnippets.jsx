@@ -44,9 +44,9 @@ const CodeSnippets = {
             
             <section id="services">
                 <h2>Our Digital Marketing Services</h2>
-                <div class="service-grid">
-                    <div class="service-card">
-                        <h3>Search Engine Optimization</h3>
+                <div className="service-grid">
+                    <div className="service-card">
+                        <h3>SEO-AUDIT TOOL</h3>
                         <p>Improve your website's visibility in search results with our comprehensive SEO strategies.</p>
                         <ul>
                             <li>Keyword research and optimization</li>
@@ -54,7 +54,7 @@ const CodeSnippets = {
                             <li>Content strategy development</li>
                         </ul>
                     </div>
-                    <div class="service-card">
+                    <div className="service-card">
                         <h3>Content Marketing</h3>
                         <p>Create engaging content that resonates with your target audience.</p>
                         <ul>
@@ -68,17 +68,17 @@ const CodeSnippets = {
 
             <section id="case-studies">
                 <h2>Success Stories</h2>
-                <div class="case-study">
+                <div className="case-study">
                     <h3>E-commerce Growth Case Study</h3>
                     <p>How we helped an online retailer increase their revenue by 200% in 6 months.</p>
-                    <div class="metrics">
-                        <div class="metric">
-                            <span class="number">200%</span>
-                            <span class="label">Revenue Growth</span>
+                    <div className="metrics">
+                        <div className="metric">
+                            <span className="number">200%</span>
+                            <span className="label">Revenue Growth</span>
                         </div>
-                        <div class="metric">
-                            <span class="number">150%</span>
-                            <span class="label">Traffic Increase</span>
+                        <div className="metric">
+                            <span className="number">150%</span>
+                            <span className="label">Traffic Increase</span>
                         </div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@ const CodeSnippets = {
     </main>
 
     <footer>
-        <div class="footer-content">
+        <div className="footer-content">
             <section aria-label="Contact information">
                 <h2>Contact Us</h2>
                 <address>
@@ -151,8 +151,8 @@ const CodeSnippets = {
             
             <section id="services">
                 <h2>Our Medical Services</h2>
-                <div class="services-grid">
-                    <div class="service-card">
+                <div className="services-grid">
+                    <div className="service-card">
                         <h3>Primary Care</h3>
                         <p>Comprehensive primary healthcare services for all ages.</p>
                         <ul>
@@ -161,7 +161,7 @@ const CodeSnippets = {
                             <li>Chronic disease management</li>
                         </ul>
                     </div>
-                    <div class="service-card">
+                    <div className="service-card">
                         <h3>Specialized Care</h3>
                         <p>Expert care for specific medical conditions.</p>
                         <ul>
@@ -175,14 +175,14 @@ const CodeSnippets = {
 
             <section id="doctors">
                 <h2>Our Medical Team</h2>
-                <div class="doctor-profiles">
-                    <div class="doctor-card">
+                <div className="doctor-profiles">
+                    <div className="doctor-card">
                         <img src="doctor1.jpg" alt="Dr. John Smith - Cardiologist" width="200" height="200">
                         <h3>Dr. John Smith</h3>
                         <p>Cardiologist</p>
                         <p>20 years of experience</p>
                     </div>
-                    <div class="doctor-card">
+                    <div className="doctor-card">
                         <img src="doctor2.jpg" alt="Dr. Sarah Johnson - Pediatrician" width="200" height="200">
                         <h3>Dr. Sarah Johnson</h3>
                         <p>Pediatrician</p>
@@ -194,7 +194,7 @@ const CodeSnippets = {
     </main>
 
     <footer>
-        <div class="footer-content">
+        <div className="footer-content">
             <section aria-label="Contact information">
                 <h2>Contact Us</h2>
                 <address>
@@ -240,12 +240,12 @@ const CodeSnippets = {
 
             <section id="services">
                 <h2>Our AI Services</h2>
-                <div class="services">
-                    <div class="service">
+                <div className="services">
+                    <div className="service">
                         <h3>Machine Learning</h3>
                         <p>Custom machine learning solutions for your business needs.</p>
                     </div>
-                    <div class="service">
+                    <div className="service">
                         <h3>AI Consulting</h3>
                         <p>Expert guidance on implementing AI in your organization.</p>
                     </div>
@@ -255,7 +255,7 @@ const CodeSnippets = {
     </main>
 
     <footer>
-        <div class="footer-content">
+        <div className="footer-content">
             <p>Contact us for AI solutions: <a href="mailto:ai@example.com">ai@example.com</a></p>
         </div>
     </footer>

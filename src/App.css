@@ -17,6 +17,8 @@ body {
   scrollbar-width: none;
   -ms-overflow-style: none;
   overflow-y: scroll;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /* For Chrome, Safari, and Opera */
@@ -28,17 +30,22 @@ body::-webkit-scrollbar {
 html {
   scrollbar-width: none;
   -ms-overflow-style: none;
+  box-sizing: border-box;
 }
 
 html::-webkit-scrollbar {
   display: none;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* Container */
 .container {
   position: relative;
-  width: 90%;
-  max-width: 500px;
+  width: 100%;
+  max-width: 800px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   padding: 24px;
@@ -53,10 +60,12 @@ html::-webkit-scrollbar {
 h1 {
   margin-bottom: 15px;
   font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: clamp(24px, 5vw, 32px);
+  line-height: 1.2;
 }
 
-h1, h2 {
-  font-size: 24px;
+h2 {
+  font-size: clamp(20px, 4vw, 24px);
   font-weight: 600;
   color: #0F3460;
   text-transform: uppercase;
@@ -66,7 +75,7 @@ h1, h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: clamp(16px, 3.5vw, 18px);
   font-weight: 500;
   color: #0F3460;
   margin-top: 16px;
@@ -81,7 +90,7 @@ h3 {
 }
 
 label {
-  font-size: 14px;
+  font-size: clamp(12px, 2.5vw, 14px);
   font-weight: 500;
   color: #0F3460;
   display: block;
@@ -95,7 +104,7 @@ input, textarea {
   width: 100%;
   padding: 10px 12px;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: clamp(12px, 2.5vw, 14px);
   border: none;
   border-radius: 6px;
   background: #F2F6FC;
@@ -510,21 +519,98 @@ tr:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {
-    padding: 20px;
+    padding: 16px;
+    margin: 10px auto;
     width: 95%;
   }
-  
-  h1 {
-    font-size: 20px;
-  }
-  
+
   button {
-    font-size: 14px;
+    padding: 10px;
+    font-size: clamp(14px, 3vw, 16px);
   }
-  
-  
+
   .sample-code-dialog {
     width: 95%;
+    max-height: 90vh;
+    padding: 16px;
+  }
+
+  .result-container {
+    max-height: 60vh;
+  }
+
+  .optimized-code {
+    height: 150px;
+  }
+
+  textarea {
+    height: 120px;
+  }
+
+  .dialog-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sample-code-table {
+    font-size: clamp(12px, 2.5vw, 14px);
+  }
+
+  th, td {
+    padding: 8px;
+  }
+
+  .copy-sample-button {
+    padding: 6px 12px;
+    font-size: clamp(12px, 2.5vw, 14px);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 12px;
+    margin: 5px auto;
+  }
+
+  button {
+    padding: 8px;
+    font-size: clamp(12px, 2.8vw, 14px);
+  }
+
+  .sample-code-dialog {
+    padding: 12px;
+  }
+
+  .result-container {
+    max-height: 50vh;
+  }
+
+  .optimized-code {
+    height: 120px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) {
+  button:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .copy-sample-button:hover {
+    background: linear-gradient(90deg, #0F3460, #16478A);
+  }
+
+  tr:hover {
+    background-color: transparent;
   }
 }
 
