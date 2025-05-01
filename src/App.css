@@ -523,7 +523,7 @@ tr:hover {
     margin: 10px auto;
     width: 95%;
   }
-
+  
   button {
     padding: 10px;
     font-size: clamp(14px, 3vw, 16px);
@@ -571,12 +571,12 @@ tr:hover {
     padding: 12px;
     margin: 5px auto;
   }
-
+  
   button {
     padding: 8px;
     font-size: clamp(12px, 2.8vw, 14px);
   }
-
+  
   .sample-code-dialog {
     padding: 12px;
   }
